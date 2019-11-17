@@ -11,6 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+//Route::get('login', 'LoginController@create');
+
+// Route::view('login','Login');
+
+// Route::get('login/{nombre}','LoginController@index');//paramateros obligado
+// //'login/{nombre?   } opcional
+
+//Route::get('admin/sistem/login','LoginController@index') ->name('login') ;
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
