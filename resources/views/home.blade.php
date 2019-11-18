@@ -16,6 +16,9 @@
 
                     You are logged in!
                 </div>
+                <div class="links">
+                    <a href="{{ route('index') }}">Inicio</a>                    
+                </div>
             </div>
         </div>
     </div>

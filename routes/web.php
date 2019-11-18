@@ -11,9 +11,9 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
 //Route::get('login', 'LoginController@create');
 
@@ -26,3 +26,8 @@
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/index', 'IndexController@index')->name('index');
+Route::get('/index/cursos', 'CursosController@index')->name('cursos');
+Route::get('/index/recursos', 'RecursosController@index')->name('recursos');
+
+//Route::get('/login2','Login2Controller@index');
