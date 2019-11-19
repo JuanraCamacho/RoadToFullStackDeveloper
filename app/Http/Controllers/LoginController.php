@@ -13,7 +13,7 @@ class LoginController extends Controller
      */
     public function index(/*$nombre*/)
     {
-        return view('Login');// compact('nombre'));
+        return view('Login.login2');// compact('nombre'));
     }
 
     /**

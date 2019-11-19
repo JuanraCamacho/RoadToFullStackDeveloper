@@ -8,6 +8,6 @@ class Login2Controller extends Controller
 {
     public function index(/*$nombre*/)
     {
-        //return view('Login');// compact('nombre'));
+        return view('Login2');// compact('nombre'));
     }
 }
